@@ -10,6 +10,9 @@
 		D02C1EEA1E5A1FF8003C5467 /* EmotionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02C1EE01E5A1FF8003C5467 /* EmotionCore.framework */; };
 		D02C1EEF1E5A1FF8003C5467 /* EmotionCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1EEE1E5A1FF8003C5467 /* EmotionCoreTests.swift */; };
 		D02C1EF11E5A1FF8003C5467 /* EmotionCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D02C1EE31E5A1FF8003C5467 /* EmotionCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D02C1F061E5A2015003C5467 /* DetectedEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1F031E5A2015003C5467 /* DetectedEmotion.swift */; };
+		D02C1F071E5A2015003C5467 /* DetectedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1F041E5A2015003C5467 /* DetectedResult.swift */; };
+		D02C1F081E5A2015003C5467 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1F051E5A2015003C5467 /* Emotion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		D02C1EE91E5A1FF8003C5467 /* EmotionCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02C1EEE1E5A1FF8003C5467 /* EmotionCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCoreTests.swift; sourceTree = "<group>"; };
 		D02C1EF01E5A1FF8003C5467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02C1F031E5A2015003C5467 /* DetectedEmotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectedEmotion.swift; sourceTree = "<group>"; };
+		D02C1F041E5A2015003C5467 /* DetectedResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectedResult.swift; sourceTree = "<group>"; };
+		D02C1F051E5A2015003C5467 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		D02C1EE21E5A1FF8003C5467 /* EmotionCore */ = {
 			isa = PBXGroup;
 			children = (
+				D02C1F031E5A2015003C5467 /* DetectedEmotion.swift */,
+				D02C1F041E5A2015003C5467 /* DetectedResult.swift */,
+				D02C1F051E5A2015003C5467 /* Emotion.swift */,
 				D02C1EE31E5A1FF8003C5467 /* EmotionCore.h */,
 				D02C1EE41E5A1FF8003C5467 /* Info.plist */,
 			);
@@ -149,6 +158,7 @@
 					D02C1EDF1E5A1FF8003C5467 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WQG87JK36G;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D02C1EE81E5A1FF8003C5467 = {
@@ -198,6 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02C1F071E5A2015003C5467 /* DetectedResult.swift in Sources */,
+				D02C1F061E5A2015003C5467 /* DetectedEmotion.swift in Sources */,
+				D02C1F081E5A2015003C5467 /* Emotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +335,7 @@
 		D02C1EF51E5A1FF8003C5467 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WQG87JK36G;
@@ -334,6 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.peterentwistle.EmotionCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +356,7 @@
 		D02C1EF61E5A1FF8003C5467 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WQG87JK36G;
@@ -360,6 +376,7 @@
 		D02C1EF81E5A1FF8003C5467 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WQG87JK36G;
 				INFOPLIST_FILE = EmotionCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +389,7 @@
 		D02C1EF91E5A1FF8003C5467 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = WQG87JK36G;
 				INFOPLIST_FILE = EmotionCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
