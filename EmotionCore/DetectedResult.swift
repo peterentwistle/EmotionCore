@@ -6,7 +6,7 @@
 //  Copyright © 2017 Peter Entwistle. All rights reserved.
 //
 
-@objc class DetectedResult: NSObject {
+@objc public class DetectedResult: NSObject {
     private var _detectedEmotion: DetectedEmotion
     private var _frame: UIImage
     
