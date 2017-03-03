@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 import AVFoundation
 
-class CameraUtil {
+@objc public class CameraUtil: NSObject {
     
     // Convert sampleBuffer to UIImage
     class func imageFromSampleBuffer(_ sampleBuffer: CMSampleBuffer) -> UIImage {
