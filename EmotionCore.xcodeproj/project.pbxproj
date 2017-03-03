@@ -13,6 +13,7 @@
 		D02C1F061E5A2015003C5467 /* DetectedEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1F031E5A2015003C5467 /* DetectedEmotion.swift */; };
 		D02C1F071E5A2015003C5467 /* DetectedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1F041E5A2015003C5467 /* DetectedResult.swift */; };
 		D02C1F081E5A2015003C5467 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1F051E5A2015003C5467 /* Emotion.swift */; };
+		D06BDDC61E69CDEA00BBBC0C /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BDDC51E69CDEA00BBBC0C /* CameraUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		D02C1F031E5A2015003C5467 /* DetectedEmotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectedEmotion.swift; sourceTree = "<group>"; };
 		D02C1F041E5A2015003C5467 /* DetectedResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectedResult.swift; sourceTree = "<group>"; };
 		D02C1F051E5A2015003C5467 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		D06BDDC51E69CDEA00BBBC0C /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				D02C1F031E5A2015003C5467 /* DetectedEmotion.swift */,
 				D02C1F041E5A2015003C5467 /* DetectedResult.swift */,
 				D02C1F051E5A2015003C5467 /* Emotion.swift */,
+				D06BDDC51E69CDEA00BBBC0C /* CameraUtil.swift */,
 				D02C1EE31E5A1FF8003C5467 /* EmotionCore.h */,
 				D02C1EE41E5A1FF8003C5467 /* Info.plist */,
 			);
@@ -210,6 +213,7 @@
 			files = (
 				D02C1F071E5A2015003C5467 /* DetectedResult.swift in Sources */,
 				D02C1F061E5A2015003C5467 /* DetectedEmotion.swift in Sources */,
+				D06BDDC61E69CDEA00BBBC0C /* CameraUtil.swift in Sources */,
 				D02C1F081E5A2015003C5467 /* Emotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 				D02C1EF61E5A1FF8003C5467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D02C1EF71E5A1FF8003C5467 /* Build configuration list for PBXNativeTarget "EmotionCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				D02C1EF91E5A1FF8003C5467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
