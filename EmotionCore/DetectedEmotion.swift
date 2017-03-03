@@ -18,7 +18,7 @@
         return _emotion
     }
     
-    init(frame: UIImage, emotion: Emotion) {
+    public init(frame: UIImage, emotion: Emotion) {
         _frame = frame
         _emotion = emotion
     }

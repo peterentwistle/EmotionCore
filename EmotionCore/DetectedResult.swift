@@ -18,7 +18,7 @@
         return _frame
     }
     
-    init(detectedEmotion: DetectedEmotion, frame: UIImage) {
+    public init(detectedEmotion: DetectedEmotion, frame: UIImage) {
         _detectedEmotion = detectedEmotion
         _frame = frame
     }
