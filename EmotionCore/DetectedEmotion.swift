@@ -10,11 +10,11 @@
     private var _frame: UIImage
     private var _emotion: Emotion
     
-    var frame: UIImage {
+    public var frame: UIImage {
         return _frame
     }
     
-    var emotion: Emotion {
+    public var emotion: Emotion {
         return _emotion
     }
     

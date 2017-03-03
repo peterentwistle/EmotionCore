@@ -10,11 +10,11 @@
     private var _detectedEmotion: DetectedEmotion
     private var _frame: UIImage
     
-    var detectedEmotion: DetectedEmotion? {
+    public var detectedEmotion: DetectedEmotion? {
         return _detectedEmotion
     }
     
-    var frame: UIImage? {
+    public var frame: UIImage? {
         return _frame
     }
     

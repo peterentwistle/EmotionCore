@@ -129,15 +129,20 @@ SWIFT_CLASS("_TtC11EmotionCore10CameraUtil")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+enum Emotion : NSInteger;
 
 SWIFT_CLASS("_TtC11EmotionCore15DetectedEmotion")
 @interface DetectedEmotion : NSObject
+@property (nonatomic, readonly, strong) UIImage * _Nonnull frame;
+@property (nonatomic, readonly) enum Emotion emotion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11EmotionCore14DetectedResult")
 @interface DetectedResult : NSObject
+@property (nonatomic, readonly, strong) DetectedEmotion * _Nullable detectedEmotion;
+@property (nonatomic, readonly, strong) UIImage * _Nullable frame;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
