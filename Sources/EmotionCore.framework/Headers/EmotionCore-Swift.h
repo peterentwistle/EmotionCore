@@ -116,13 +116,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import ObjectiveC;
+@import CoreMedia;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIImage;
 
 SWIFT_CLASS("_TtC11EmotionCore10CameraUtil")
 @interface CameraUtil : NSObject
++ (UIImage * _Nonnull)imageFromSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

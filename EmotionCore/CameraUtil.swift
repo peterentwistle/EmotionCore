@@ -14,7 +14,7 @@ import AVFoundation
 @objc public class CameraUtil: NSObject {
     
     // Convert sampleBuffer to UIImage
-    class func imageFromSampleBuffer(_ sampleBuffer: CMSampleBuffer) -> UIImage {
+    public class func imageFromSampleBuffer(_ sampleBuffer: CMSampleBuffer) -> UIImage {
         let imageBuffer: CVImageBuffer! = CMSampleBufferGetImageBuffer(sampleBuffer)
         
         // Lock the base address of the pixel buffer.

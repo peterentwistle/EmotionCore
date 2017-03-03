@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/EmotionCore-Swift.h</key>
 		<data>
-		R5VD9Rn1T+d7vXymUqv0aP2fG0w=
+		eW7dv0HfyyRX/RlXdnt3DbSq5uI=
 		</data>
 		<key>Headers/EmotionCore.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/EmotionCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		PHcIM2hec9+rxqUhgYisQYzXGAo=
+		uRgy3ZoogFIt9HGO8++cX0DTmKg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R5VD9Rn1T+d7vXymUqv0aP2fG0w=
+			eW7dv0HfyyRX/RlXdnt3DbSq5uI=
 			</data>
 			<key>hash2</key>
 			<data>
-			eBenJVO9bJpNrFqKtlMenNXRJQ3GjrAzgSo2Hq8n2GU=
+			Or00ogORMItaBuNDTs5ETGHb5C925dsw9opXv0TVDPM=
 			</data>
 		</dict>
 		<key>Headers/EmotionCore.h</key>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PHcIM2hec9+rxqUhgYisQYzXGAo=
+			uRgy3ZoogFIt9HGO8++cX0DTmKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ABuliTCyQIuzobNB/GI/ZdiYUNVIO1WakTrQjF32V2s=
+			/e6BkGnITCkP9lmGkGPgkLoEycZmYhJXXxnizNXhOE8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
