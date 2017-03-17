@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D02A9FAE1E7C2F84005AD526 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D02A9FB11E7C2F84005AD526 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				D02A9FB21E7C2F93005AD526 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D02C1EEA1E5A1FF8003C5467 /* EmotionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02C1EE01E5A1FF8003C5467 /* EmotionCore.framework */; };
 		D02C1EEF1E5A1FF8003C5467 /* EmotionCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C1EEE1E5A1FF8003C5467 /* EmotionCoreTests.swift */; };
@@ -158,6 +172,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Peter Entwistle";
 				TargetAttributes = {
+					D02A9FAE1E7C2F84005AD526 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WQG87JK36G;
+						ProvisioningStyle = Automatic;
+					};
 					D02C1EDF1E5A1FF8003C5467 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WQG87JK36G;
@@ -185,6 +204,7 @@
 			targets = (
 				D02C1EDF1E5A1FF8003C5467 /* EmotionCore */,
 				D02C1EE81E5A1FF8003C5467 /* EmotionCoreTests */,
+				D02A9FAE1E7C2F84005AD526 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +225,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D02A9FB21E7C2F93005AD526 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D02C1EDB1E5A1FF8003C5467 /* Sources */ = {
@@ -237,6 +273,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D02A9FAF1E7C2F84005AD526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WQG87JK36G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D02A9FB01E7C2F84005AD526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WQG87JK36G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D02C1EF21E5A1FF8003C5467 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,6 +458,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D02A9FB11E7C2F84005AD526 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02A9FAF1E7C2F84005AD526 /* Debug */,
+				D02A9FB01E7C2F84005AD526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D02C1EDA1E5A1FF8003C5467 /* Build configuration list for PBXProject "EmotionCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

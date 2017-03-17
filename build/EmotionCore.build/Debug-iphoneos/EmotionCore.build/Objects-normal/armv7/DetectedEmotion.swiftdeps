@@ -1,0 +1,137 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DetectedEmotion"
+provides-nominal:
+- "C11EmotionCore15DetectedEmotion"
+provides-member:
+- ["C11EmotionCore15DetectedEmotion", ""]
+provides-dynamic-lookup:
+- "emotion"
+- "frame"
+depends-top-level:
+- "UIImage"
+- "NSObject"
+- "Emotion"
+- "AssignmentPrecedence"
+- !private "StringLiteralType"
+- "DetectedEmotion"
+depends-member:
+- ["Ps9AnyObject", "_emotion"]
+- ["Ps9AnyObject", "_frame"]
+- ["Ps9AnyObject", "emotion"]
+- ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "_emotion"]
+- ["Ps7CVarArg", "_frame"]
+- ["Ps7CVarArg", "emotion"]
+- ["Ps7CVarArg", "frame"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "_emotion"]
+- ["Ps28CustomDebugStringConvertible", "_frame"]
+- ["Ps28CustomDebugStringConvertible", "emotion"]
+- ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "_emotion"]
+- ["Ps23CustomStringConvertible", "_frame"]
+- ["Ps23CustomStringConvertible", "emotion"]
+- ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["C11EmotionCore15DetectedEmotion", "Emotion"]
+- ["C11EmotionCore15DetectedEmotion", "UIImage"]
+- !private ["C11EmotionCore15DetectedEmotion", "_emotion"]
+- !private ["C11EmotionCore15DetectedEmotion", "_frame"]
+- ["C11EmotionCore15DetectedEmotion", "deinit"]
+- ["C11EmotionCore15DetectedEmotion", "emotion"]
+- ["C11EmotionCore15DetectedEmotion", "frame"]
+- ["C11EmotionCore15DetectedEmotion", "init"]
+- ["O11EmotionCore7Emotion", "deinit"]
+- ["Ps9Equatable", "_emotion"]
+- ["Ps9Equatable", "_frame"]
+- ["Ps9Equatable", "emotion"]
+- ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "_emotion"]
+- ["Ps8Hashable", "_frame"]
+- ["Ps8Hashable", "emotion"]
+- ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["CSo8NSObject", "Emotion"]
+- ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "_emotion"]
+- ["CSo8NSObject", "_frame"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "emotion"]
+- ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "_emotion"]
+- ["PSo16NSObjectProtocol", "_frame"]
+- ["PSo16NSObjectProtocol", "emotion"]
+- ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Os5Never", "deinit"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["CSo7UIImage", "deinit"]
+- ["Su", "deinit"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps9_Hashable", "_emotion"]
+- ["Ps9_Hashable", "_frame"]
+- ["Ps9_Hashable", "emotion"]
+- ["Ps9_Hashable", "frame"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C11EmotionCore15DetectedEmotion"
+- "O11EmotionCore7Emotion"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Os5Never"
+- "Vs12StaticString"
+- "CSo7UIImage"
+- "Su"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Peter/Library/Mobile Documents/com~apple~CloudDocs/Development/FinalYearProject/EmotionCore/EmotionCore/EmotionCore.h"
+- "/Users/Peter/Library/Mobile Documents/com~apple~CloudDocs/Development/FinalYearProject/EmotionCore/build/EmotionCore.build/Debug-iphoneos/EmotionCore.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+interface-hash: "d1ae0f1aa580c541b968c970666c5008"

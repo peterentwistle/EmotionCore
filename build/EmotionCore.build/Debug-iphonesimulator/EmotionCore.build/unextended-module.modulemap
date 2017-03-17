@@ -1,0 +1,10 @@
+framework module EmotionCore {
+  umbrella header "EmotionCore.h"
+
+  export *
+  module * { export * }
+}
+
+module EmotionCore.__Swift {
+    exclude header "EmotionCore-Swift.h"
+}
