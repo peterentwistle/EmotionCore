@@ -13,5 +13,7 @@
     case happiness
     case sadness
     case surprise
+    case contempt
+    case neutral
     case none
 }

@@ -172,7 +172,9 @@ typedef SWIFT_ENUM(NSInteger, Emotion) {
   EmotionHappiness = 3,
   EmotionSadness = 4,
   EmotionSurprise = 5,
-  EmotionNone = 6,
+  EmotionContempt = 6,
+  EmotionNeutral = 7,
+  EmotionNone = 8,
 };
 
 #pragma clang diagnostic pop
