@@ -15,5 +15,7 @@
     case surprise
     case contempt
     case neutral
+    case positive
+    case negative
     case none
 }
